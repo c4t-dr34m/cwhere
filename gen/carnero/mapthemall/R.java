@@ -9,17 +9,28 @@ package carnero.mapthemall;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int apiKey=0x7f010000;
     }
     public static final class drawable {
         public static final int friend_placard=0x7f020000;
         public static final int ic_contact_picture_3=0x7f020001;
         public static final int icon=0x7f020002;
+        public static final int popup=0x7f020003;
     }
     public static final class id {
         public static final int map=0x7f050000;
+        public static final int text=0x7f050001;
     }
     public static final class layout {
         public static final int map=0x7f030000;
+        public static final int map_popup=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -34,4 +45,33 @@ public final class R {
          */
         public static final int maps_api_key_market=0x7f040002;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a carnero_mapthemall_libs_MapView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #carnero_mapthemall_libs_MapView_apiKey carnero.mapthemall:apiKey}</code></td><td></td></tr>
+           </table>
+           @see #carnero_mapthemall_libs_MapView_apiKey
+         */
+        public static final int[] carnero_mapthemall_libs_MapView = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link carnero.mapthemall.R.attr#apiKey}
+          attribute's value can be found in the {@link #carnero_mapthemall_libs_MapView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:apiKey
+        */
+        public static final int carnero_mapthemall_libs_MapView_apiKey = 0;
+    };
 }
