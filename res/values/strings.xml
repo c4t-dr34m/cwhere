@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Map Them All</string>
+	
+	  <!-- keys -->
+	  <string name="maps_api_key">0HEeyLeVKGHZ6X5nAWqVFvyplTNnKUquILfte4w</string> <!-- dev -->
+	  <string name="maps_api_key_market">0aqvjxNlVeQ_h3Sfdk2jMTO66naKrxgJsAB-y3Q</string> <!-- market -->
+	  
+	  <string name="loading_title">Reading address book...</string>
+	  <string name="loading_message">Searching for first contact.</string>
+</resources>
