@@ -50,6 +50,11 @@ public class main extends MapActivity {
 				}
 			} else if (msgData != null) {
 				final String info = msgData.getString("info");
+				final int total = msgData.getInt("total");
+				final int current = msgData.getInt("current");
+				
+				loadProgress.setMax(total);
+				loadProgress.setProgress(current);
 
 				if (info.length() < 24) {
 					loadProgress.setMessage(info);
@@ -72,9 +77,13 @@ public class main extends MapActivity {
 		initMap();
 
 		if (loadProgress == null) {
-			loadProgress = ProgressDialog.show(this, res.getString(R.string.loading_title), res.getString(R.string.loading_message), true);
-			loadProgress.setIndeterminate(true);
+			loadProgress = new ProgressDialog(this);
+			loadProgress.setTitle(res.getString(R.string.loading_title));
+			loadProgress.setMessage(res.getString(R.string.loading_message));
+			loadProgress.setIndeterminate(false);
+			loadProgress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 			loadProgress.setCancelable(true);
+			loadProgress.show();
 
 			loadContactsThread = new LoadContactsThread(core, overlay, loadHandler);
 			loadContactsThread.start();

@@ -55,9 +55,14 @@ public class Core {
 			}
 		}
 		
+		final int total = contacts.size();
+		int current = 0;
+		
 		for (Contact contact : contacts) {
 			final Bundle msgData = new Bundle();
 			msgData.putString("info", contact.nameDisplay);
+			msgData.putInt("total", total);
+			msgData.putInt("current", current);
 			
 			final Message msg = new Message();
 			msg.what = 1;
@@ -67,6 +72,8 @@ public class Core {
 			
 			putAddress(resolver, contact);
 			putAvatar(resolver, contact);
+			
+			current ++;
 		}
 
 		return contacts;
