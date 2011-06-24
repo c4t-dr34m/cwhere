@@ -8,4 +8,8 @@
 	  
 	  <string name="loading_title">Reading address book...</string>
 	  <string name="loading_message">Searching for first contact.</string>
+	  
+	  <string name="address_home">home</string>
+	  <string name="address_work">work</string>
+	  <string name="address_other">other</string>
 </resources>

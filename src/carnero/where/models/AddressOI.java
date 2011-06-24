@@ -36,12 +36,12 @@ public class AddressOI extends OverlayItem{
 	@Override
 	public Drawable getMarker(int state) {
 		if (marker == null) {
-			Bitmap badge = BitmapFactory.decodeResource(context.getResources(), R.drawable.friend_placard);
+			Bitmap badge = BitmapFactory.decodeResource(context.getResources(), R.drawable.badge);
 			badge = badge.copy(Bitmap.Config.ARGB_8888, true); // to create mutable bitmap (needed for canvas)
 			
 			Bitmap avatar;
 			if (contact.avatar == null) {
-				avatar = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_contact_picture_3);
+				avatar = BitmapFactory.decodeResource(context.getResources(), R.drawable.contact_generic);
 			} else {
 				avatar = contact.avatar;
 			}

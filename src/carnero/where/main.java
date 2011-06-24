@@ -120,7 +120,7 @@ public class main extends MapActivity {
 		overlays.clear();
 
 		if (overlay == null) {
-			overlay = new OverlayContacts(this, mapView, getResources().getDrawable(R.drawable.ic_contact_picture_3));
+			overlay = new OverlayContacts(this, mapView, getResources().getDrawable(R.drawable.contact_generic));
 
 			overlays.add(overlay);
 		}

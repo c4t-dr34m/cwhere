@@ -5,10 +5,13 @@ import carnero.where.libs.MapView;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import carnero.where.libs.ContactDetail;
 import com.google.android.maps.GeoPoint;
@@ -19,6 +22,7 @@ public class OverlayContacts extends ItemizedOverlay<AddressOI> {
 
 	private Context context;
 	private MapView mapView;
+	private Resources resources;
 	private ArrayList<AddressOI> addresses = new ArrayList<AddressOI>();
 	
 	private View popupView;
@@ -29,6 +33,7 @@ public class OverlayContacts extends ItemizedOverlay<AddressOI> {
 
 		context = ctx;
 		mapView = mv;
+		resources = context.getResources();
 	}
 
 	public synchronized void fill(ArrayList<Contact> contacts) {
@@ -111,15 +116,27 @@ public class OverlayContacts extends ItemizedOverlay<AddressOI> {
 			popupParent = (ViewGroup) mapView.getParent();
 			popupView = ((Activity) context).getLayoutInflater().inflate(R.layout.map_popup, popupParent, false);
 
+			final ImageView viewDetails = (ImageView) popupView.findViewById(R.id.details);
+			final TextView viewName = (TextView) popupView.findViewById(R.id.text);
+			final TextView viewMore = (TextView) popupView.findViewById(R.id.more);
+			
+			viewDetails.setOnClickListener(new ContactDetail(context, this, item.getContact().id));
+			viewName.setText(item.getContact().nameDisplay);
+			
+			final int addrType = item.getAddress().type;
+			if (addrType == StructuredPostal.TYPE_HOME) {
+				viewMore.setText(resources.getString(R.string.address_home));
+			} else if (addrType == StructuredPostal.TYPE_WORK) {
+				viewMore.setText(resources.getString(R.string.address_work));
+			} else {
+				viewMore.setText(resources.getString(R.string.address_other));
+			}
+
 			MapView.LayoutParams mapViewLP = new MapView.LayoutParams(
 					MapView.LayoutParams.WRAP_CONTENT,
 					MapView.LayoutParams.WRAP_CONTENT,
-					point, -48, -160,
+					point, -28, -160,
 					MapView.LayoutParams.LEFT);
-
-			((TextView) popupView.findViewById(R.id.text)).setText(item.getContact().nameDisplay);
-
-			popupView.setOnClickListener(new ContactDetail(context, this, item.getContact().id));
 
 			mapView.addView(popupView, mapViewLP);
 		}

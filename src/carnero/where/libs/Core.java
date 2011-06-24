@@ -37,7 +37,8 @@ public class Core {
 		final ContentResolver resolver = context.getContentResolver();
 		final String[] projection = new String[]{
 			ContactsContract.Contacts._ID,
-			ContactsContract.Contacts.DISPLAY_NAME};
+			ContactsContract.Contacts.DISPLAY_NAME,
+		};
 		
 		final Cursor cursor = resolver.query(ContactsContract.Contacts.CONTENT_URI, projection, null, null, null);
 		
