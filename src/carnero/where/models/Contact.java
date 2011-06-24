@@ -1,4 +1,4 @@
-package carnero.mapthemall.models;
+package carnero.where.models;
 
 import android.graphics.Bitmap;
 import java.util.ArrayList;

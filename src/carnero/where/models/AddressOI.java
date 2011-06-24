@@ -1,6 +1,6 @@
-package carnero.mapthemall.models;
+package carnero.where.models;
 
-import carnero.mapthemall.R;
+import carnero.where.R;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,7 +9,7 @@ import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
-import carnero.mapthemall.libs.Core;
+import carnero.where.libs.Core;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.OverlayItem;
 

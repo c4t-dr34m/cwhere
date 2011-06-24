@@ -1,9 +1,9 @@
-package carnero.mapthemall.libs;
+package carnero.where.libs;
 
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
-import carnero.mapthemall.main;
+import carnero.where.main;
 
 public class GeoListener implements LocationListener {
 	

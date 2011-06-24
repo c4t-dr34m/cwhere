@@ -1,4 +1,4 @@
-package carnero.mapthemall.libs;
+package carnero.where.libs;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.view.View.OnClickListener;
-import carnero.mapthemall.models.OverlayContacts;
+import carnero.where.models.OverlayContacts;
 
 public class ContactDetail implements OnClickListener {
 	

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 		  android:versionCode="100"
 		  android:versionName="1.00"
-		  package="carnero.mapthemall"
-		  name="Map Them All"
+		  package="carnero.where"
+		  name="c:where"
 		  android:installLocation="auto" >
 	<uses-sdk android:minSdkVersion="6" android:targetSdkVersion="8" />
 	<uses-permission android:name="android.permission.INTERNET" />

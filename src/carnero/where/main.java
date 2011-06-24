@@ -1,11 +1,12 @@
-package carnero.mapthemall;
+package carnero.where;
 
-import carnero.mapthemall.libs.Core;
-import carnero.mapthemall.libs.Constants;
-import carnero.mapthemall.libs.GeoListener;
-import carnero.mapthemall.libs.LoadContactsThread;
-import carnero.mapthemall.libs.MapView;
-import carnero.mapthemall.models.OverlayContacts;
+import carnero.where.R;
+import carnero.where.libs.Core;
+import carnero.where.libs.Constants;
+import carnero.where.libs.GeoListener;
+import carnero.where.libs.LoadContactsThread;
+import carnero.where.libs.MapView;
+import carnero.where.models.OverlayContacts;
 
 import android.app.ProgressDialog;
 import android.content.Context;

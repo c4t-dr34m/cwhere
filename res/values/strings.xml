@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Map Them All</string>
+	<string name="app_name">c:where</string>
 	
 	  <!-- keys -->
 	  <string name="maps_api_key">0HEeyLeVKGHZ6X5nAWqVFvyplTNnKUquILfte4w</string> <!-- dev -->

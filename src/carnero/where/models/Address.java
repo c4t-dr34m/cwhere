@@ -1,4 +1,4 @@
-package carnero.mapthemall.models;
+package carnero.where.models;
 
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
 

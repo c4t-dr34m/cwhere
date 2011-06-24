@@ -1,7 +1,7 @@
-package carnero.mapthemall.models;
+package carnero.where.models;
 
-import carnero.mapthemall.R;
-import carnero.mapthemall.libs.MapView;
+import carnero.where.R;
+import carnero.where.libs.MapView;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import carnero.mapthemall.libs.ContactDetail;
+import carnero.where.libs.ContactDetail;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.ItemizedOverlay;
 import java.util.ArrayList;

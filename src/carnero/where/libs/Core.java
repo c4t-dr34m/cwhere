@@ -1,6 +1,6 @@
-package carnero.mapthemall.libs;
+package carnero.where.libs;
 
-import carnero.mapthemall.models.Contact;
+import carnero.where.models.Contact;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Context;
@@ -15,8 +15,8 @@ import android.os.Message;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
 import android.util.Log;
-import carnero.mapthemall.models.Address;
-import carnero.mapthemall.models.AddressOI;
+import carnero.where.models.Address;
+import carnero.where.models.AddressOI;
 import com.google.android.maps.GeoPoint;
 import java.io.IOException;
 import java.io.InputStream;

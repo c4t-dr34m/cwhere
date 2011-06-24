@@ -1,8 +1,8 @@
-package carnero.mapthemall.libs;
+package carnero.where.libs;
 
 import android.os.Handler;
-import carnero.mapthemall.models.Contact;
-import carnero.mapthemall.models.OverlayContacts;
+import carnero.where.models.Contact;
+import carnero.where.models.OverlayContacts;
 import java.util.ArrayList;
 
 public class LoadContactsThread extends Thread {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-	<declare-styleable name="carnero.mapthemall.libs.MapView">
+	<declare-styleable name="carnero.where.libs.MapView">
 		<attr name="apiKey" format="string" />
 	</declare-styleable>
 </resources>

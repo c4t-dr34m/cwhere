@@ -1,9 +1,9 @@
-package carnero.mapthemall.libs;
+package carnero.where.libs;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import carnero.mapthemall.models.OverlayContacts;
+import carnero.where.models.OverlayContacts;
 import com.google.android.maps.Overlay;
 import java.util.List;
 
